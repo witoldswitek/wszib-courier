@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Courier.Core.Dto
 {
-    class ParcelDto
+    public class ParcelDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
