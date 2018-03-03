@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Courier.Core.Services
 {
-    class ParcelService : IParcelService
+    public class ParcelService : IParcelService
     {
         private static readonly ISet<Parcel> _parcels = new HashSet<Parcel>();
         private readonly ILocationService _locationService;

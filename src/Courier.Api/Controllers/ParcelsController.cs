@@ -47,7 +47,8 @@ namespace Courier.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreateParcel command)
         {
-            return Ok();
+            await _parcelService.CreateAsync(command.Id, command.Name, command.SenderId, command.ReceiverId, command.ReceiverAddress);
+            return CreatedAtAction(nameof(Get), new { id = command.Id }, null);
         }
 
     }
