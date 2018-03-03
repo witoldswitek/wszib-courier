@@ -5,6 +5,6 @@ using System.Text;
 namespace Courier.Core.Commands
 {
     interface ICommands
-    {
+    {        
     }
 }
